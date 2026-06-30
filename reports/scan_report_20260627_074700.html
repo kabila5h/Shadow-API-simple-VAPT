@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow API Scan Report — https://0ae300bd03c6e044801ccb4b00140078.web-security-academy.net/</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:2rem}
+h1{font-size:1.8rem;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+h2{font-size:1.3rem;color:#94a3b8;margin:2rem 0 1rem;border-bottom:1px solid #1e293b;padding-bottom:.5rem}
+h3{font-size:1.1rem;color:#cbd5e1;margin:.5rem 0}
+.header{background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:12px;padding:2rem;margin-bottom:2rem;border:1px solid #3730a3}
+.subtitle{color:#a5b4fc;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1rem 0}
+.card{background:#1e293b;border-radius:10px;padding:1.5rem;border:1px solid #334155}
+.card .label{color:#64748b;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+.card .value{font-size:2rem;font-weight:700;margin-top:.3rem}
+.critical{color:#ef4444}.high{color:#f97316}.medium{color:#eab308}.low{color:#22c55e}.info{color:#3b82f6}
+.badge{display:inline-block;padding:2px 10px;border-radius:9999px;font-size:.75rem;font-weight:600}
+.badge.Critical{background:#7f1d1d;color:#fca5a5}
+.badge.High{background:#7c2d12;color:#fdba74}
+.badge.Medium{background:#713f12;color:#fde047}
+.badge.Low{background:#14532d;color:#86efac}
+.badge.Info{background:#1e3a5f;color:#93c5fd}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.85rem}
+th{background:#1e293b;color:#94a3b8;text-align:left;padding:10px 12px;border-bottom:2px solid #334155}
+td{padding:10px 12px;border-bottom:1px solid #1e293b;vertical-align:top}
+tr:hover{background:#1e293b80}
+.vuln-card{background:#1e293b;border-radius:10px;padding:1.5rem;margin:1rem 0;border-left:4px solid #334155}
+.vuln-card.Critical{border-left-color:#ef4444}
+.vuln-card.High{border-left-color:#f97316}
+.vuln-card.Medium{border-left-color:#eab308}
+.vuln-card.Low{border-left-color:#22c55e}
+pre{background:#0f172a;border:1px solid #334155;border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;margin:.5rem 0;color:#94a3b8}
+.remediation{background:#14532d20;border:1px solid #16a34a30;border-radius:6px;padding:.8rem;margin-top:.8rem;font-size:.85rem}
+.footer{text-align:center;color:#475569;margin-top:3rem;padding-top:1rem;border-top:1px solid #1e293b;font-size:.8rem}
+.score-ring{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>🛡️ Shadow API Scanner Report</h1>
+<p class="subtitle">Target: https://0ae300bd03c6e044801ccb4b00140078.web-security-academy.net/ &nbsp;|&nbsp; Scan ID: b38eba10-6ca &nbsp;|&nbsp; 2026-06-27T07:46:09.907088</p>
+</div>
+
+<div class="grid">
+<div class="card"><div class="label">Risk Level</div>
+<div class="value high">High</div></div>
+<div class="card"><div class="label">Risk Score</div>
+<div class="value">8.0/10</div></div>
+<div class="card"><div class="label">Total Endpoints</div>
+<div class="value">11</div></div>
+<div class="card"><div class="label">Shadow APIs</div>
+<div class="value critical">8</div></div>
+<div class="card"><div class="label">Vulnerabilities</div>
+<div class="value high">41</div></div>
+<div class="card"><div class="label">JS Files Analyzed</div>
+<div class="value info">1</div></div>
+</div>
+
+<div class="grid">
+<div class="card"><div class="label">Critical</div><div class="value critical">0</div></div>
+<div class="card"><div class="label">High</div><div class="value high">28</div></div>
+<div class="card"><div class="label">Medium</div><div class="value medium">13</div></div>
+<div class="card"><div class="label">Low</div><div class="value low">0</div></div>
+</div>
+
+<h2>📡 Discovered Endpoints (11)</h2>
+<table>
+<thead><tr><th>Method</th><th>URL</th><th>Type</th><th>Source</th><th>Shadow</th><th>Status</th></tr></thead>
+<tbody>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://0ae300bd03c6e044801ccb4b00140078.web-security-academy.net/user/{user.username}</td>
+<td>REST</td>
+<td>openapi_specification</td>
+<td><span class="badge Low">Documented</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>DELETE</strong></td>
+<td style="word-break:break-all">https://0ae300bd03c6e044801ccb4b00140078.web-security-academy.net/user/{user.username}</td>
+<td>REST</td>
+<td>openapi_specification</td>
+<td><span class="badge Low">Documented</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>PATCH</strong></td>
+<td style="word-break:break-all">https://0ae300bd03c6e044801ccb4b00140078.web-security-academy.net/user/{user.username}</td>
+<td>REST</td>
+<td>openapi_specification</td>
+<td><span class="badge Low">Documented</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>POST</strong></td>
+<td style="word-break:break-all">https://portswigger.net/api/widgets?</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>200</td>
+</tr>
+
+<tr>
+<td><strong>POST</strong></td>
+<td style="word-break:break-all">https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>200</td>
+</tr>
+
+<tr>
+<td><strong>POST</strong></td>
+<td style="word-break:break-all">https://www.youtube.com/youtubei/v1/log_event?alt=json</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>200</td>
+</tr>
+
+<tr>
+<td><strong>POST</strong></td>
+<td style="word-break:break-all">https://phingest.staging.portswigger.com/flags/?v=2&ip=0&_=1782546390633&ver=1.369.0&compression=base64</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>200</td>
+</tr>
+
+<tr>
+<td><strong>POST</strong></td>
+<td style="word-break:break-all">https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=hIskhmdhM980jyiM&ver=2&cmt=0&fs=0&rt=1.116&euri=https%3A%2F%2Fportswigger.net%2F&lact=1130&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=454&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C23206%2C35405%2C34391%2C30906%2C2877%2C12228%2C25059%2C4174%2C30447%2C18705%2C21437%2C4571%2C5238%2C7778%2C1191%2C14896%2C9404%2C23826%2C9500%2C1840%2C45715%2C7917%2C5243%2C452%2C30488%2C5022%2C9970%2C3324%2C7295%2C4199%2C460%2C13549%2C16105%2C17715%2C6633%2C249%2C82%2C4405%2C12964%2C12591%2C3227%2C4298%2C6032%2C1168%2C372%2C490%2C2324%2C2630%2C2314%2C16625%2C8868%2C3475%2C5353%2C1899%2C7968%2C1095%2C500%2C927%2C2249%2C273%2C5020%2C2963%2C133%2C1143%2C2550%2C7346%2C1876%2C2365%2C2217%2C2107%2C24835%2C3614%2C446%2C564%2C122%2C1729%2C7205%2C1549%2C2&muted=0&docid=AxzpOVS23o8</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>POST</strong></td>
+<td style="word-break:break-all">https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=Aq3FrO4SgFO49U2c&ver=2&cmt=0&fs=0&rt=1.168&euri=https%3A%2F%2Fportswigger.net%2F&lact=1190&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=590&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C6258%2C16948%2C69796%2C30906%2C2878%2C12227%2C25059%2C4174%2C30446%2C18706%2C21437%2C4571%2C9670%2C3345%2C13111%2C2315%2C662%2C9404%2C5382%2C18444%2C9500%2C1840%2C24119%2C16481%2C5115%2C10931%2C2229%2C452%2C30489%2C5022%2C9969%2C3325%2C7294%2C4199%2C458%2C29656%2C17715%2C6633%2C249%2C82%2C5366%2C12004%2C12590%2C7525%2C365%2C5667%2C317%2C851%2C372%2C490%2C2324%2C2630%2C2315%2C16624%2C5773%2C3095%2C3475%2C3524%2C1829%2C1900%2C2276%2C5691%2C1095%2C500%2C927%2C2249%2C273%2C7983%2C133%2C1143%2C2550%2C7346%2C1876%2C2368%2C2214%2C2107%2C24836%2C587%2C3026%2C187%2C123%2C822&muted=0&docid=1eVnDnfAQuQ</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://px.ads.linkedin.com/attribution_trigger?pid=6316346&time=1782546391282&url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fapi-testing%2Flab-exploiting-api-endpoint-using-documentation</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://tags.srv.stackadapt.com/saq_pxl?uid=SEk-Q5_UkYJF2mT9DoZeJQ&is_js=true&landing_url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fapi-testing%2Flab-exploiting-api-endpoint-using-documentation&t=Lab%3A%20Exploiting%20an%20API%20endpoint%20using%20documentation%20%7C%20Web%20Security%20Academy&tip=BzkoBa1sGG8oOFAW0noXFyVCWemOish4hHXMSJjT2wU&host=https%3A%2F%2Fportswigger.net&l_src=0ae300bd03c6e044801ccb4b00140078.web-security-academy.net&l_src_d=2026-06-27T07%3A46%3A31.803Z&u_src=&u_src_d=&shop=false&sa-user-id-v4=s%253ACiQwMTlmMDgwYi02MjE3LTdlZTctYTM4Mi05NTg1YmMyMTQ4NGMQBBoEQVBBQyAk.bb%252FnPOPHwzVYZf38HKYaKVZ%252BMFsYxSFr70KBlJphLpY&sa-user-id-v3=s%253A.o6W7wkJsHSTU4%252BLlDruZ%252FwNjVcUZZMvakQpSatDoAgo&sa-user-id-v2=s%253As3np89HrVvtOF_PeqG6NVZJG5RE.Ib0%252BQ6pc69xC0iEpxoYcswKJxCw4gP15R9IfGjUbK6s&sa-user-id=s%253A0-b379e9f3-d1eb-56fb-4e17-f3dea86e8d55.Lq9F9VcRn9N98Wn%252F4MXYPo5ZmIkzw1s5vS36DOLZnDA</td>
+<td>REST</td>
+<td>dynamic_traffic_capture</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>200</td>
+</tr>
+
+</tbody>
+</table>
+
+<h2>⚠️ Vulnerabilities (41)</h2>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>POST https://www.youtube.com/youtubei/v1/log_event?alt=json
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (130ms)
+  Content-Length: 28
+  Body: {
+  "responseContext": {}
+}
+</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://px.ads.linkedin.com/attribution_trigger?pid=6316346&time=1782546391282&url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fapi-testing%2Flab-exploiting-api-endpoint-using-documentation
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (374ms)
+  Content-Length: 2
+  Body: {}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://tags.srv.stackadapt.com/saq_pxl?uid=SEk-Q5_UkYJF2mT9DoZeJQ&is_js=true&landing_url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fapi-testing%2Flab-exploiting-api-endpoint-using-documentation&t=Lab%3A%20Exploiting%20an%20API%20endpoint%20using%20documentation%20%7C%20Web%20Security%20Academy&tip=BzkoBa1sGG8oOFAW0noXFyVCWemOish4hHXMSJjT2wU&host=https%3A%2F%2Fportswigger.net&l_src=0ae300bd03c6e044801ccb4b00140078.web-security-academy.net&l_src_d=2026-06-27T07%3A46%3A31.803Z&u_src=&u_src_d=&shop=false&sa-user-id-v4=s%253ACiQwMTlmMDgwYi02MjE3LTdlZTctYTM4Mi05NTg1YmMyMTQ4NGMQBBoEQVBBQyAk.bb%252FnPOPHwzVYZf38HKYaKVZ%252BMFsYxSFr70KBlJphLpY&sa-user-id-v3=s%253A.o6W7wkJsHSTU4%252BLlDruZ%252FwNjVcUZZMvakQpSatDoAgo&sa-user-id-v2=s%253As3np89HrVvtOF_PeqG6NVZJG5RE.Ib0%252BQ6pc69xC0iEpxoYcswKJxCw4gP15R9IfGjUbK6s&sa-user-id=s%253A0-b379e9f3-d1eb-56fb-4e17-f3dea86e8d55.Lq9F9VcRn9N98Wn%252F4MXYPo5ZmIkzw1s5vS36DOLZnDA
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (309ms)
+  Content-Length: 213
+  Body: {"conversion_tracker_uids":["pWXMhsCrtiyR9rQEkhT1h5","gPr0QrK6RqKmTTc45Ulu4n"],"retargeting_tracker_uids":["zOwvVklPFsfvcUpToZQUKI","1d7RYzXRYsgQ39usAveZUY","WlriHI8KlVhgMP7DzHFbA0"],"lookalike_tracker_uids":null}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (7.7)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>POST https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=hIskhmdhM980jyiM&ver=2&cmt=0&fs=0&rt=1.116&euri=https%3A%2F%2Fportswigger.net%2F&lact=1130&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=454&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C23206%2C35405%2C34391%2C30906%2C2877%2C12228%2C25059%2C4174%2C30447%2C18705%2C21437%2C4571%2C5238%2C7778%2C1191%2C14896%2C9404%2C23826%2C9500%2C1840%2C45715%2C7917%2C5243%2C452%2C30488%2C5022%2C9970%2C3324%2C7295%2C4199%2C460%2C13549%2C16105%2C17715%2C6633%2C249%2C82%2C4405%2C12964%2C12591%2C3227%2C4298%2C6032%2C1168%2C372%2C490%2C2324%2C2630%2C2314%2C16625%2C8868%2C3475%2C5353%2C1899%2C7968%2C1095%2C500%2C927%2C2249%2C273%2C5020%2C2963%2C133%2C1143%2C2550%2C7346%2C1876%2C2365%2C2217%2C2107%2C24835%2C3614%2C446%2C564%2C122%2C1729%2C7205%2C1549%2C2&muted=0&docid=AxzpOVS23o8
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 204 (130ms)
+  Content-Length: 0
+  Body: </pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (7.7)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>POST https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=Aq3FrO4SgFO49U2c&ver=2&cmt=0&fs=0&rt=1.168&euri=https%3A%2F%2Fportswigger.net%2F&lact=1190&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=590&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C6258%2C16948%2C69796%2C30906%2C2878%2C12227%2C25059%2C4174%2C30446%2C18706%2C21437%2C4571%2C9670%2C3345%2C13111%2C2315%2C662%2C9404%2C5382%2C18444%2C9500%2C1840%2C24119%2C16481%2C5115%2C10931%2C2229%2C452%2C30489%2C5022%2C9969%2C3325%2C7294%2C4199%2C458%2C29656%2C17715%2C6633%2C249%2C82%2C5366%2C12004%2C12590%2C7525%2C365%2C5667%2C317%2C851%2C372%2C490%2C2324%2C2630%2C2315%2C16624%2C5773%2C3095%2C3475%2C3524%2C1829%2C1900%2C2276%2C5691%2C1095%2C500%2C927%2C2249%2C273%2C7983%2C133%2C1143%2C2550%2C7346%2C1876%2C2368%2C2214%2C2107%2C24836%2C587%2C3026%2C187%2C123%2C822&muted=0&docid=1eVnDnfAQuQ
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 204 (129ms)
+  Content-Length: 0
+  Body: </pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (245ms)
+  Content-Length: 786911
+  Body: <!DOCTYPE html><html style="font-size: 62.5%;font-family: Roboto, Arial, sans-serif;" lang="en" darker-dark-theme darker-dark-theme-deprecate system-icons color-version="v2_0" typography typography-spacing><head><script data-id="_gd" nonce="kSDUeAT24EGNT4wMXlMBrA">window.WIZ_global_data = {"AfY8Hf":false,"FL1an":false,"HiPsbb":0,"MUE6Ne":"youtube_web","MuJWjd":false,"UUFaWc":"%.@.null,1000,2]","cfb2h":"youtube.web-front-end-critical_20260624.08_p0","fPDxwd":[],"hsFLT":"%.@.null,10,3]","iCzhFc":false,"nQyAE":{},"oxN3nb":{"1":false,"0":false,"610401301":false,"899588437":false,"772657768":true,"513659523":false,"568333945":true,"1331761403":false,"651175828":false,"722764542":false,"748402145":false,"748402146":false,"748402147":true,"8613777</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (293ms)
+  Content-Length: 722202
+  Body: <!DOCTYPE html><html style="font-size: 62.5%;font-family: Roboto, Arial, sans-serif;" lang="en" darker-dark-theme darker-dark-theme-deprecate system-icons color-version="v2_0" typography typography-spacing><head><script data-id="_gd" nonce="8KFw0hYqsOWzbMV1UrBiqQ">window.WIZ_global_data = {"AfY8Hf":false,"FL1an":false,"HiPsbb":0,"MUE6Ne":"youtube_web","MuJWjd":false,"UUFaWc":"%.@.null,1000,2]","cfb2h":"youtube.web-front-end-critical_20260624.08_p0","fPDxwd":[],"hsFLT":"%.@.null,10,3]","iCzhFc":false,"nQyAE":{},"oxN3nb":{"1":false,"0":false,"610401301":false,"899588437":false,"772657768":true,"513659523":false,"568333945":true,"1331761403":false,"651175828":false,"722764542":false,"748402145":false,"748402146":false,"748402147":true,"8613777</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Method Override: GET accepted (original: POST)</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Endpoint accepts GET method in addition to POST.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://phingest.staging.portswigger.com/flags/?v=2&ip=0&_=1782546390633&ver=1.369.0&compression=base64
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (286ms)
+  Content-Length: 279
+  Body: {"errorsWhileComputingFlags":false,"flags":{},"requestId":"ca8bc17e-397e-43b1-a658-20caaecfc3c3","evaluatedAt":1782546409689,"sessionRecording":false,"supportedCompression":["gzip","gzip-js"],"config":{"enable_collect_everything":true},"isAuthenticated":false,"toolbarParams":{}}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict allowed HTTP methods per endpoint. Implement proper RBAC.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (556ms)
+  Content-Length: 786786
+  Body: <!DOCTYPE html><html style="font-size: 62.5%;font-family: Roboto, Arial, sans-serif;" lang="en" darker-dark-theme darker-dark-theme-deprecate system-icons color-version="v2_0" typography typography-spacing><head><script data-id="_gd" nonce="xF3KkBi8FPFt2dW6D8kPmg">window.WIZ_global_data = {"AfY8Hf":false,"FL1an":false,"HiPsbb":0,"MUE6Ne":"youtube_web","MuJWjd":false,"UUFaWc":"%.@.null,1000,2]","cfb2h":"youtube.web-front-end-critical_20260624.08_p0","fPDxwd":[],"hsFLT":"%.@.null,10,3]","iCzhFc":false,"nQyAE":{},"oxN3nb":{"1":false,"0":false,"610401301":false,"899588437":false,"772657768":true,"513659523":false,"568333945":true,"1331761403":false,"651175828":false,"722764542":false,"748402145":false,"748402146":false,"748402147":true,"8613777</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (293ms)
+  Content-Length: 722296
+  Body: <!DOCTYPE html><html style="font-size: 62.5%;font-family: Roboto, Arial, sans-serif;" lang="en" darker-dark-theme darker-dark-theme-deprecate system-icons color-version="v2_0" typography typography-spacing><head><script data-id="_gd" nonce="fQ20bZME0YpSRt6aPrPU7g">window.WIZ_global_data = {"AfY8Hf":false,"FL1an":false,"HiPsbb":0,"MUE6Ne":"youtube_web","MuJWjd":false,"UUFaWc":"%.@.null,1000,2]","cfb2h":"youtube.web-front-end-critical_20260624.08_p0","fPDxwd":[],"hsFLT":"%.@.null,10,3]","iCzhFc":false,"nQyAE":{},"oxN3nb":{"1":false,"0":false,"610401301":false,"899588437":false,"772657768":true,"513659523":false,"568333945":true,"1331761403":false,"651175828":false,"722764542":false,"748402145":false,"748402146":false,"748402147":true,"8613777</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (545ms)
+  Content-Length: 787102
+  Body: <!DOCTYPE html><html style="font-size: 62.5%;font-family: Roboto, Arial, sans-serif;" lang="en" darker-dark-theme darker-dark-theme-deprecate system-icons color-version="v2_0" typography typography-spacing><head><script data-id="_gd" nonce="k8qZ-V57eevE3OSAOwLO_A">window.WIZ_global_data = {"AfY8Hf":false,"FL1an":false,"HiPsbb":0,"MUE6Ne":"youtube_web","MuJWjd":false,"UUFaWc":"%.@.null,1000,2]","cfb2h":"youtube.web-front-end-critical_20260624.08_p0","fPDxwd":[],"hsFLT":"%.@.null,10,3]","iCzhFc":false,"nQyAE":{},"oxN3nb":{"1":false,"0":false,"610401301":false,"899588437":false,"772657768":true,"513659523":false,"568333945":true,"1331761403":false,"651175828":false,"722764542":false,"748402145":false,"748402146":false,"748402147":true,"8613777</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (257ms)
+  Content-Length: 722011
+  Body: <!DOCTYPE html><html style="font-size: 62.5%;font-family: Roboto, Arial, sans-serif;" lang="en" darker-dark-theme darker-dark-theme-deprecate system-icons color-version="v2_0" typography typography-spacing><head><script data-id="_gd" nonce="qWooioIkNIubLD_v6f2v0g">window.WIZ_global_data = {"AfY8Hf":false,"FL1an":false,"HiPsbb":0,"MUE6Ne":"youtube_web","MuJWjd":false,"UUFaWc":"%.@.null,1000,2]","cfb2h":"youtube.web-front-end-critical_20260624.08_p0","fPDxwd":[],"hsFLT":"%.@.null,10,3]","iCzhFc":false,"nQyAE":{},"oxN3nb":{"1":false,"0":false,"610401301":false,"899588437":false,"772657768":true,"513659523":false,"568333945":true,"1331761403":false,"651175828":false,"722764542":false,"748402145":false,"748402146":false,"748402147":true,"8613777</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://px.ads.linkedin.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (352ms)
+  Content-Length: 5
+  Body: GOOD
+</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://px.ads.linkedin.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (350ms)
+  Content-Length: 43
+  Body: GIF89a  �  ���   !�   ,       D ;</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://px.ads.linkedin.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (370ms)
+  Content-Length: 43
+  Body: GIF89a  �  ���   !�   ,       D ;</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://px.ads.linkedin.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (368ms)
+  Content-Length: 43
+  Body: GIF89a  �  ���   !�   ,       D ;</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://px.ads.linkedin.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (391ms)
+  Content-Length: 43
+  Body: GIF89a  �  ���   !�   ,       D ;</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Method Override: POST accepted (original: GET)</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Endpoint accepts POST method in addition to GET.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>POST https://tags.srv.stackadapt.com/saq_pxl?uid=SEk-Q5_UkYJF2mT9DoZeJQ&is_js=true&landing_url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fapi-testing%2Flab-exploiting-api-endpoint-using-documentation&t=Lab%3A%20Exploiting%20an%20API%20endpoint%20using%20documentation%20%7C%20Web%20Security%20Academy&tip=BzkoBa1sGG8oOFAW0noXFyVCWemOish4hHXMSJjT2wU&host=https%3A%2F%2Fportswigger.net&l_src=0ae300bd03c6e044801ccb4b00140078.web-security-academy.net&l_src_d=2026-06-27T07%3A46%3A31.803Z&u_src=&u_src_d=&shop=false&sa-user-id-v4=s%253ACiQwMTlmMDgwYi02MjE3LTdlZTctYTM4Mi05NTg1YmMyMTQ4NGMQBBoEQVBBQyAk.bb%252FnPOPHwzVYZf38HKYaKVZ%252BMFsYxSFr70KBlJphLpY&sa-user-id-v3=s%253A.o6W7wkJsHSTU4%252BLlDruZ%252FwNjVcUZZMvakQpSatDoAgo&sa-user-id-v2=s%253As3np89HrVvtOF_PeqG6NVZJG5RE.Ib0%252BQ6pc69xC0iEpxoYcswKJxCw4gP15R9IfGjUbK6s&sa-user-id=s%253A0-b379e9f3-d1eb-56fb-4e17-f3dea86e8d55.Lq9F9VcRn9N98Wn%252F4MXYPo5ZmIkzw1s5vS36DOLZnDA
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (325ms)
+  Content-Length: 213
+  Body: {"conversion_tracker_uids":["pWXMhsCrtiyR9rQEkhT1h5","gPr0QrK6RqKmTTc45Ulu4n"],"retargeting_tracker_uids":["zOwvVklPFsfvcUpToZQUKI","1d7RYzXRYsgQ39usAveZUY","WlriHI8KlVhgMP7DzHFbA0"],"lookalike_tracker_uids":null}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict allowed HTTP methods per endpoint. Implement proper RBAC.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Method Override: GET accepted (original: POST)</h3>
+<span class="badge High">High (7.3)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Endpoint accepts GET method in addition to POST.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=hIskhmdhM980jyiM&ver=2&cmt=0&fs=0&rt=1.116&euri=https%3A%2F%2Fportswigger.net%2F&lact=1130&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=454&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C23206%2C35405%2C34391%2C30906%2C2877%2C12228%2C25059%2C4174%2C30447%2C18705%2C21437%2C4571%2C5238%2C7778%2C1191%2C14896%2C9404%2C23826%2C9500%2C1840%2C45715%2C7917%2C5243%2C452%2C30488%2C5022%2C9970%2C3324%2C7295%2C4199%2C460%2C13549%2C16105%2C17715%2C6633%2C249%2C82%2C4405%2C12964%2C12591%2C3227%2C4298%2C6032%2C1168%2C372%2C490%2C2324%2C2630%2C2314%2C16625%2C8868%2C3475%2C5353%2C1899%2C7968%2C1095%2C500%2C927%2C2249%2C273%2C5020%2C2963%2C133%2C1143%2C2550%2C7346%2C1876%2C2365%2C2217%2C2107%2C24835%2C3614%2C446%2C564%2C122%2C1729%2C7205%2C1549%2C2&muted=0&docid=AxzpOVS23o8
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 204 (80ms)
+  Content-Length: 0
+  Body: </pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict allowed HTTP methods per endpoint. Implement proper RBAC.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Method Override: GET accepted (original: POST)</h3>
+<span class="badge High">High (7.3)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Endpoint accepts GET method in addition to POST.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=Aq3FrO4SgFO49U2c&ver=2&cmt=0&fs=0&rt=1.168&euri=https%3A%2F%2Fportswigger.net%2F&lact=1190&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=590&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C6258%2C16948%2C69796%2C30906%2C2878%2C12227%2C25059%2C4174%2C30446%2C18706%2C21437%2C4571%2C9670%2C3345%2C13111%2C2315%2C662%2C9404%2C5382%2C18444%2C9500%2C1840%2C24119%2C16481%2C5115%2C10931%2C2229%2C452%2C30489%2C5022%2C9969%2C3325%2C7294%2C4199%2C458%2C29656%2C17715%2C6633%2C249%2C82%2C5366%2C12004%2C12590%2C7525%2C365%2C5667%2C317%2C851%2C372%2C490%2C2324%2C2630%2C2315%2C16624%2C5773%2C3095%2C3475%2C3524%2C1829%2C1900%2C2276%2C5691%2C1095%2C500%2C927%2C2249%2C273%2C7983%2C133%2C1143%2C2550%2C7346%2C1876%2C2368%2C2214%2C2107%2C24836%2C587%2C3026%2C187%2C123%2C822&muted=0&docid=1eVnDnfAQuQ
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 204 (123ms)
+  Content-Length: 0
+  Body: </pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict allowed HTTP methods per endpoint. Implement proper RBAC.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>CORS Misconfiguration: Wildcard Origin</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Access-Control-Allow-Origin is set to '*', allowing any origin.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict CORS to specific trusted origins.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-942</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: DENY/SAMEORIGIN</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: DENY/SAMEORIGIN</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://portswigger.net/api/widgets? is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://www.youtube.com/youtubei/v1/log_event?alt=json is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://phingest.staging.portswigger.com/flags/?v=2&ip=0&_=1782546390633&ver=1.369.0&compression=base64 is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=hIskhmdhM980jyiM&ver=2&cmt=0&fs=0&rt=1.116&euri=https%3A%2F%2Fportswigger.net%2F&lact=1130&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=454&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C23206%2C35405%2C34391%2C30906%2C2877%2C12228%2C25059%2C4174%2C30447%2C18705%2C21437%2C4571%2C5238%2C7778%2C1191%2C14896%2C9404%2C23826%2C9500%2C1840%2C45715%2C7917%2C5243%2C452%2C30488%2C5022%2C9970%2C3324%2C7295%2C4199%2C460%2C13549%2C16105%2C17715%2C6633%2C249%2C82%2C4405%2C12964%2C12591%2C3227%2C4298%2C6032%2C1168%2C372%2C490%2C2324%2C2630%2C2314%2C16625%2C8868%2C3475%2C5353%2C1899%2C7968%2C1095%2C500%2C927%2C2249%2C273%2C5020%2C2963%2C133%2C1143%2C2550%2C7346%2C1876%2C2365%2C2217%2C2107%2C24835%2C3614%2C446%2C564%2C122%2C1729%2C7205%2C1549%2C2&muted=0&docid=AxzpOVS23o8 is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://www.youtube.com/api/stats/atr?ns=yt&el=embedded&cpn=Aq3FrO4SgFO49U2c&ver=2&cmt=0&fs=0&rt=1.168&euri=https%3A%2F%2Fportswigger.net%2F&lact=1190&cl=936900853&mos=0&volume=100&cbr=Chrome&cbrver=125.0.0.0&c=WEB_EMBEDDED_PLAYER&cver=2.20260626.01.00&cplayer=UNIPLAYER&cos=Windows&cosver=10.0&cplatform=DESKTOP&epm=1&hl=en_GB&cr=IN&len=590&fexp=v1%2C24004644%2C27058999%2C34656%2C124674%2C117689%2C9252%2C3479%2C13030%2C6258%2C16948%2C69796%2C30906%2C2878%2C12227%2C25059%2C4174%2C30446%2C18706%2C21437%2C4571%2C9670%2C3345%2C13111%2C2315%2C662%2C9404%2C5382%2C18444%2C9500%2C1840%2C24119%2C16481%2C5115%2C10931%2C2229%2C452%2C30489%2C5022%2C9969%2C3325%2C7294%2C4199%2C458%2C29656%2C17715%2C6633%2C249%2C82%2C5366%2C12004%2C12590%2C7525%2C365%2C5667%2C317%2C851%2C372%2C490%2C2324%2C2630%2C2315%2C16624%2C5773%2C3095%2C3475%2C3524%2C1829%2C1900%2C2276%2C5691%2C1095%2C500%2C927%2C2249%2C273%2C7983%2C133%2C1143%2C2550%2C7346%2C1876%2C2368%2C2214%2C2107%2C24836%2C587%2C3026%2C187%2C123%2C822&muted=0&docid=1eVnDnfAQuQ is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://px.ads.linkedin.com/attribution_trigger?pid=6316346&time=1782546391282&url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fapi-testing%2Flab-exploiting-api-endpoint-using-documentation is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://tags.srv.stackadapt.com/saq_pxl?uid=SEk-Q5_UkYJF2mT9DoZeJQ&is_js=true&landing_url=https%3A%2F%2Fportswigger.net%2Fweb-security%2Fapi-testing%2Flab-exploiting-api-endpoint-using-documentation&t=Lab%3A%20Exploiting%20an%20API%20endpoint%20using%20documentation%20%7C%20Web%20Security%20Academy&tip=BzkoBa1sGG8oOFAW0noXFyVCWemOish4hHXMSJjT2wU&host=https%3A%2F%2Fportswigger.net&l_src=0ae300bd03c6e044801ccb4b00140078.web-security-academy.net&l_src_d=2026-06-27T07%3A46%3A31.803Z&u_src=&u_src_d=&shop=false&sa-user-id-v4=s%253ACiQwMTlmMDgwYi02MjE3LTdlZTctYTM4Mi05NTg1YmMyMTQ4NGMQBBoEQVBBQyAk.bb%252FnPOPHwzVYZf38HKYaKVZ%252BMFsYxSFr70KBlJphLpY&sa-user-id-v3=s%253A.o6W7wkJsHSTU4%252BLlDruZ%252FwNjVcUZZMvakQpSatDoAgo&sa-user-id-v2=s%253As3np89HrVvtOF_PeqG6NVZJG5RE.Ib0%252BQ6pc69xC0iEpxoYcswKJxCw4gP15R9IfGjUbK6s&sa-user-id=s%253A0-b379e9f3-d1eb-56fb-4e17-f3dea86e8d55.Lq9F9VcRn9N98Wn%252F4MXYPo5ZmIkzw1s5vS36DOLZnDA is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+
+
+
+<div class="footer">
+<p>Generated by Shadow API Scanner v1.0.0 &nbsp;|&nbsp; 2026-06-27T07:47:00.520988</p>
+</div>
+</div>
+</body>
+</html>
