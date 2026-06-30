@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow API Scan Report — https://jsonplaceholder.typicode.com</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:2rem}
+h1{font-size:1.8rem;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+h2{font-size:1.3rem;color:#94a3b8;margin:2rem 0 1rem;border-bottom:1px solid #1e293b;padding-bottom:.5rem}
+h3{font-size:1.1rem;color:#cbd5e1;margin:.5rem 0}
+.header{background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:12px;padding:2rem;margin-bottom:2rem;border:1px solid #3730a3}
+.subtitle{color:#a5b4fc;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1rem 0}
+.card{background:#1e293b;border-radius:10px;padding:1.5rem;border:1px solid #334155}
+.card .label{color:#64748b;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+.card .value{font-size:2rem;font-weight:700;margin-top:.3rem}
+.critical{color:#ef4444}.high{color:#f97316}.medium{color:#eab308}.low{color:#22c55e}.info{color:#3b82f6}
+.badge{display:inline-block;padding:2px 10px;border-radius:9999px;font-size:.75rem;font-weight:600}
+.badge.Critical{background:#7f1d1d;color:#fca5a5}
+.badge.High{background:#7c2d12;color:#fdba74}
+.badge.Medium{background:#713f12;color:#fde047}
+.badge.Low{background:#14532d;color:#86efac}
+.badge.Info{background:#1e3a5f;color:#93c5fd}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.85rem}
+th{background:#1e293b;color:#94a3b8;text-align:left;padding:10px 12px;border-bottom:2px solid #334155}
+td{padding:10px 12px;border-bottom:1px solid #1e293b;vertical-align:top}
+tr:hover{background:#1e293b80}
+.vuln-card{background:#1e293b;border-radius:10px;padding:1.5rem;margin:1rem 0;border-left:4px solid #334155}
+.vuln-card.Critical{border-left-color:#ef4444}
+.vuln-card.High{border-left-color:#f97316}
+.vuln-card.Medium{border-left-color:#eab308}
+.vuln-card.Low{border-left-color:#22c55e}
+pre{background:#0f172a;border:1px solid #334155;border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;margin:.5rem 0;color:#94a3b8}
+.remediation{background:#14532d20;border:1px solid #16a34a30;border-radius:6px;padding:.8rem;margin-top:.8rem;font-size:.85rem}
+.footer{text-align:center;color:#475569;margin-top:3rem;padding-top:1rem;border-top:1px solid #1e293b;font-size:.8rem}
+.score-ring{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>🛡️ Shadow API Scanner Report</h1>
+<p class="subtitle">Target: https://jsonplaceholder.typicode.com &nbsp;|&nbsp; Scan ID: 4b9a915b-358 &nbsp;|&nbsp; 2026-05-06T19:53:40.577586</p>
+</div>
+
+<div class="grid">
+<div class="card"><div class="label">Risk Level</div>
+<div class="value high">High</div></div>
+<div class="card"><div class="label">Risk Score</div>
+<div class="value">8.0/10</div></div>
+<div class="card"><div class="label">Total Endpoints</div>
+<div class="value">2</div></div>
+<div class="card"><div class="label">Shadow APIs</div>
+<div class="value critical">2</div></div>
+<div class="card"><div class="label">Vulnerabilities</div>
+<div class="value high">8</div></div>
+<div class="card"><div class="label">JS Files Analyzed</div>
+<div class="value info">3</div></div>
+</div>
+
+<div class="grid">
+<div class="card"><div class="label">Critical</div><div class="value critical">0</div></div>
+<div class="card"><div class="label">High</div><div class="value high">4</div></div>
+<div class="card"><div class="label">Medium</div><div class="value medium">4</div></div>
+<div class="card"><div class="label">Low</div><div class="value low">0</div></div>
+</div>
+
+<h2>📡 Discovered Endpoints (2)</h2>
+<table>
+<thead><tr><th>Method</th><th>URL</th><th>Type</th><th>Source</th><th>Shadow</th><th>Status</th></tr></thead>
+<tbody>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://jsonplaceholder.typicode.com/todos/1</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://server.ethicalads.io/api/v1/decision/?</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+</tbody>
+</table>
+
+<h2>⚠️ Vulnerabilities (8)</h2>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>BOLA: Accessible with ID=2</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API1: Broken Object Level Authorization (BOLA)</p>
+<p>Endpoint returned 200 when object ID was changed from 1 to 2.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://jsonplaceholder.typicode.com/todos/2
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (514ms)
+  Content-Length: 99
+  Body: {
+  "userId": 1,
+  "id": 2,
+  "title": "quis ut nam facilis et officia qui",
+  "completed": false
+}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Implement object-level authorization checks. Verify the requesting user has permission to access the specific object.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-639</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://jsonplaceholder.typicode.com/todos/1
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (598ms)
+  Content-Length: 83
+  Body: {
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Method Override: PUT accepted (original: GET)</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Endpoint accepts PUT method in addition to GET.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>PUT https://jsonplaceholder.typicode.com/todos/1
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (647ms)
+  Content-Length: 13
+  Body: {
+  "id": 1
+}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict allowed HTTP methods per endpoint. Implement proper RBAC.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://jsonplaceholder.typicode.com/todos/1 is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://server.ethicalads.io/api/v1/decision/? is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>SQL Injection Indicator in Response</h3>
+<span class="badge Medium">Medium (5.3)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API10: Unsafe Consumption of APIs</p>
+<p>SQL error message detected when injecting: 1; DROP TABLE users--</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://server.ethicalads.io/api/v1/decision/?q=1%3B+DROP+TABLE+users--&search=1%3B+DROP+TABLE+users--&input=1%3B+DROP+TABLE+users--
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 403 (658ms)
+  Content-Length: 4574
+  Body: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<title>Attention Required! | Cloudflare</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" />
+<!--[if lt IE 9]><link rel="</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Use parameterized queries. Validate and sanitize all inputs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-89</p>
+</div>
+
+
+
+
+<div class="footer">
+<p>Generated by Shadow API Scanner v1.0.0 &nbsp;|&nbsp; 2026-05-06T19:54:23.885824</p>
+</div>
+</div>
+</body>
+</html>

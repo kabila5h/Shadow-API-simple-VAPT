@@ -1,0 +1,26 @@
+# HTTP & Networking
+httpx[http2]>=0.27.0
+requests>=2.31.0
+
+# HTML/JS Parsing
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Browser Automation & Traffic Interception
+playwright>=1.40.0
+
+# Async Support
+aiofiles>=23.0.0
+
+# CLI
+rich>=13.0.0
+click>=8.1.0
+
+# Reporting
+jinja2>=3.1.0
+
+# Build
+pyinstaller>=6.0.0
+
+# URL parsing
+tldextract>=5.0.0

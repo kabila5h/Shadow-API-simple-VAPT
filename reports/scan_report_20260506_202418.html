@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow API Scan Report — https://www.windy.com</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:2rem}
+h1{font-size:1.8rem;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+h2{font-size:1.3rem;color:#94a3b8;margin:2rem 0 1rem;border-bottom:1px solid #1e293b;padding-bottom:.5rem}
+h3{font-size:1.1rem;color:#cbd5e1;margin:.5rem 0}
+.header{background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:12px;padding:2rem;margin-bottom:2rem;border:1px solid #3730a3}
+.subtitle{color:#a5b4fc;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1rem 0}
+.card{background:#1e293b;border-radius:10px;padding:1.5rem;border:1px solid #334155}
+.card .label{color:#64748b;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+.card .value{font-size:2rem;font-weight:700;margin-top:.3rem}
+.critical{color:#ef4444}.high{color:#f97316}.medium{color:#eab308}.low{color:#22c55e}.info{color:#3b82f6}
+.badge{display:inline-block;padding:2px 10px;border-radius:9999px;font-size:.75rem;font-weight:600}
+.badge.Critical{background:#7f1d1d;color:#fca5a5}
+.badge.High{background:#7c2d12;color:#fdba74}
+.badge.Medium{background:#713f12;color:#fde047}
+.badge.Low{background:#14532d;color:#86efac}
+.badge.Info{background:#1e3a5f;color:#93c5fd}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.85rem}
+th{background:#1e293b;color:#94a3b8;text-align:left;padding:10px 12px;border-bottom:2px solid #334155}
+td{padding:10px 12px;border-bottom:1px solid #1e293b;vertical-align:top}
+tr:hover{background:#1e293b80}
+.vuln-card{background:#1e293b;border-radius:10px;padding:1.5rem;margin:1rem 0;border-left:4px solid #334155}
+.vuln-card.Critical{border-left-color:#ef4444}
+.vuln-card.High{border-left-color:#f97316}
+.vuln-card.Medium{border-left-color:#eab308}
+.vuln-card.Low{border-left-color:#22c55e}
+pre{background:#0f172a;border:1px solid #334155;border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;margin:.5rem 0;color:#94a3b8}
+.remediation{background:#14532d20;border:1px solid #16a34a30;border-radius:6px;padding:.8rem;margin-top:.8rem;font-size:.85rem}
+.footer{text-align:center;color:#475569;margin-top:3rem;padding-top:1rem;border-top:1px solid #1e293b;font-size:.8rem}
+.score-ring{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>🛡️ Shadow API Scanner Report</h1>
+<p class="subtitle">Target: https://www.windy.com &nbsp;|&nbsp; Scan ID: abdc87f4-d7e &nbsp;|&nbsp; 2026-05-06T20:22:53.043196</p>
+</div>
+
+<div class="grid">
+<div class="card"><div class="label">Risk Level</div>
+<div class="value high">High</div></div>
+<div class="card"><div class="label">Risk Score</div>
+<div class="value">8.0/10</div></div>
+<div class="card"><div class="label">Total Endpoints</div>
+<div class="value">15</div></div>
+<div class="card"><div class="label">Shadow APIs</div>
+<div class="value critical">15</div></div>
+<div class="card"><div class="label">Vulnerabilities</div>
+<div class="value high">103</div></div>
+<div class="card"><div class="label">JS Files Analyzed</div>
+<div class="value info">4</div></div>
+</div>
+
+<div class="grid">
+<div class="card"><div class="label">Critical</div><div class="value critical">0</div></div>
+<div class="card"><div class="label">High</div><div class="value high">79</div></div>
+<div class="card"><div class="label">Medium</div><div class="value medium">24</div></div>
+<div class="card"><div class="label">Low</div><div class="value low">0</div></div>
+</div>
+
+<h2>📡 Discovered Endpoints (15)</h2>
+<table>
+<thead><tr><th>Method</th><th>URL</th><th>Type</th><th>Source</th><th>Shadow</th><th>Status</th></tr></thead>
+<tbody>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://node.windy.com/services/umisteni${a}</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://node.windy.com/metadata/v1.0/forecast/ecmwf-hres/minifest.json${a}</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://node.windy.com/metadata/v1.0/forecast/ecmwf-hres/minifest.json${a}&premium=true</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://www.windy.com/img/favicon.ico</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://node.windy.com/sedlina/errors</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://account.windy.com/api/logout</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://account.windy.com/api/info</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://admin.windy.com/webcams/admin/v1.0/views?${Vt(n)}</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://sat.windy.com/satellite/composite.json?${Xp()}</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://sat.windy.com/satellite/archive/range.json?${Xp()}</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://rdr.windy.com/radar2/composite/minifest2.json?${Xp()}</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://rdr.windy.com/radar2/archive/composite/minifest2.json?${Xp()}</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://rdr.windy.com/radar2/composite/coverage.json</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://tiles.windy.com/v1/maptiles/outdoor/${t?</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><strong>GET</strong></td>
+<td style="word-break:break-all">https://tiles.windy.com/v1/maptiles/winter/256/{z}/{x}/{y}/?lang=en</td>
+<td>REST</td>
+<td>static_js_analysis</td>
+<td><span class="badge Critical">SHADOW</span></td>
+<td>—</td>
+</tr>
+
+</tbody>
+</table>
+
+<h2>⚠️ Vulnerabilities (103)</h2>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/img/favicon.ico
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (494ms)
+  Content-Length: 15086
+  Body:          h  6          �  �  00     �%  F  (                                                    *$�+%��%��&��&��%��%��*$�+                        ++�&��%��%��%��%��%��%��%��%��&��++�            ++�&��%��%��%��%��%��%��%��%��%��%��&��++�        &��%��%��%��:4������������������4-��%��%��%��&��    *$�+%��%��%��-&��������������������������%��%��%��%��*$�+%��%��%��%����������]X������.'�������~��ql��%��%��%��%��%��%��%��%������������������%��1+����������%��%��%��%��&��%��%��<5������gb����������%��%��_Z��mh��KE��%��%��&��&��%��%��hc������LF����������%��%��%��`[��_Z��%��%��&��%��%��%����������71����������%��%��%��@:��GA��%��%��%��%��%��%�������</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://account.windy.com/api/logout
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (420ms)
+  Content-Length: 0
+  Body: </pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://account.windy.com/api/info
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (689ms)
+  Content-Length: 227
+  Body: {"message":"ok","auth":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWdpYyI6MzA1LCJpYXQiOjE3NzgwOTg5ODksImV4cCI6MTc3ODI3MTc4OX0.u5fEl60Yg2PUIiRvFm2t8dZ7Geizre_bzgJHLvujJcg","userInfo":{"requiresCookieConsent":false}}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://sat.windy.com/satellite/composite.json?${Xp()}
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (813ms)
+  Content-Length: 112411
+  Body: {"composite_groups":[{"name":"deg137w","members":["deg137w"],"outage_region":"america_west"},{"name":"deg41e","members":["deg41e"],"outage_region":"asia_west"},{"name":"deg140e","members":["deg140e"],"outage_region":"asia_east"},{"name":"deg75w","members":["deg75w"],"outage_region":"america_east"},{"name":"deg0e","members":["deg0emtg","deg0e"],"outage_region":"africa_europe"},{"name":"other","members":["deg9e"],"outage_region":""}],"satellites":[{"name":"deg0e","extents":[-40.5,-74.0193013,36.9,74.0193013],"provider":{"name":"EUMETSAT","url":"https://www.eumetsat.int","logo":"eumetsat-grey.svg"}},{"name":"deg0emtg","extents":[-40.5,-74.0193013,39.9,74.0193013],"provider":{"name":"EUMETSAT","url":"https://www.eumetsat.int","logo":"eumetsat-g</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://sat.windy.com/satellite/archive/range.json?${Xp()}
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (681ms)
+  Content-Length: 75
+  Body: {"maxDate":"2026-05-06T20:00:00","minDate":"2025-03-31T00:00:00","step":60}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://rdr.windy.com/radar2/composite/minifest2.json?${Xp()}
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (913ms)
+  Content-Length: 135894
+  Body: {"tiles":[[64,42,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[64,43,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[64,44,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[64,45,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[65,42,"2026-05-06T20:21:17Z","2026-05-06T18:52:50Z"],[65,43,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[65,44,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[65,45,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[66,42,"2026-05-06T20:21:17Z","2026-05-06T18:52:50Z"],[66,43,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[66,44,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[66,45,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[63,42,"2026-05-06T20:20:26Z","2026-05-06T18:52:50Z"],[63,43,"2026-05-06T20:20:26Z","2026-05</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://rdr.windy.com/radar2/archive/composite/minifest2.json?${Xp()}
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (913ms)
+  Content-Length: 93
+  Body: {"maxDate":"2026-05-06T18:00:00Z","minDate":"2025-05-05T00:00:00Z","step":15,"version":"1.0"}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Auth Bypass: Endpoint accessible without authentication</h3>
+<span class="badge High">High (8.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API2: Broken Authentication</p>
+<p>Endpoint returns successful response without valid authentication headers.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://rdr.windy.com/radar2/composite/coverage.json
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (860ms)
+  Content-Length: 17648
+  Body: [26.82,75.82,500.0,16.18,81.15,500.0,30.36,76.45,500.0,25.58,85.09,500.0,15.49,73.82,500.0,9.93,76.26,500.0,23.24,69.65,500.0,22.88,-109.93,450.0,20.26,86.65,500.0,42.3,24.63,300.0,18.97,-91.17,450.0,34.54,107.24,220.0,8.54,76.87,365.0,50.14,1.83,255.0,45.41,-98.41,460.0,-34.62,138.47,320.0,-35.33,138.5,480.0,37.46,15.05,100.0,40.88,14.28,100.0,38.08,15.64,100.0,38.4,30.42,370.0,23.89,91.25,500.0,37.72,23.5,185.0,41.92,8.79,255.0,39.72,140.1,380.0,38.92,20.75,185.0,42.55,-74.06,460.0,-34.94,117.82,320.0,47.28,8.51,245.0,35.12,-106.82,460.0,36.61,-4.66,235.0,-23.8,133.89,480.0,6.18,100.41,300.0,42.13,9.5,255.0,35.2,-101.71,460.0,60.65,-151.35,460.0,13.44,144.81,460.0,69.24,16.0,235.0,37.92,21.3,185.0,30.62,116.79,256.0,32.92,117.44,256.0,32.8</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Enforce authentication on all API endpoints. Use proven auth mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-306</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1110ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1683ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1294ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1385ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (511ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1738ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1405ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (511ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (722ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1584ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1415ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1944ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1907ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (517ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (726ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (748ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (131ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (302ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (391ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (704ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1300ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1310ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (332ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (718ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1595ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://account.windy.com/admin/users
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1326ms)
+  Content-Length: 901
+  Body: <!doctype html>
+<html lang="en" data-theme="windy">
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="icon" href="../favicon-admin.png" /> -->
+        <!-- <link rel="icon" href="../favicon.png" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+    </head>
+    <body data-sveltekit-preload-data="hover">
+        <div style="display: contents">
+			<script>
+				{
+					__sveltekit_zmughl = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {"PUBLIC_ACCOUNT_BASE_URL":"https://account.windy.com"}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.fxPin6gE.js"),
+						import("../_app/immu</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://account.windy.com/admin/users
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1259ms)
+  Content-Length: 901
+  Body: <!doctype html>
+<html lang="en" data-theme="windy">
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="icon" href="../favicon-admin.png" /> -->
+        <!-- <link rel="icon" href="../favicon.png" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+    </head>
+    <body data-sveltekit-preload-data="hover">
+        <div style="display: contents">
+			<script>
+				{
+					__sveltekit_zmughl = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {"PUBLIC_ACCOUNT_BASE_URL":"https://account.windy.com"}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.fxPin6gE.js"),
+						import("../_app/immu</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1533ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1320ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1310ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (322ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (702ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1107ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1682ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1294ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1742ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (331ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (3279ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1329ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (995ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1404ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1076ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (3290ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1399ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1274ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1228ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (991ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /admin</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /admin returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/admin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (2816ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /internal</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /internal returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/internal
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1337ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /debug</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /debug returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/debug
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1275ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /manage</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /manage returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/manage
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (1259ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Admin Endpoint Exposed: /config</h3>
+<span class="badge High">High (7.6)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API5: Broken Function Level Authorization</p>
+<p>Administrative endpoint /config returned HTTP 200.</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://www.windy.com/config
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (991ms)
+  Content-Length: 8016
+  Body: <!DOCTYPE html><html lang="en" id="device-mobile"><head><title>Windy: Wind map &amp; weather forecast</title><base href="/"><link rel="canonical" href="https://www.windy.com"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="dns-prefetch" href="https://node.windy.com"><link rel="dns-prefetch" href="https://account.windy.com"><link rel="dns-prefetch" href="https://tiles.windy.com"><link rel="dns-prefetch" href="https://ims.windy.com"><link rel="dns-prefetch" href="https://img.windy.com"><link rel="dns-prefetch" href="https://rdr.windy.com"><link rel="dns-prefetch" href="https://sat.w</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict admin endpoints with strong authorization. Deny by default.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-285</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>CORS Misconfiguration: Wildcard Origin</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Access-Control-Allow-Origin is set to '*', allowing any origin.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict CORS to specific trusted origins.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-942</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>CORS Misconfiguration: Wildcard Origin</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Access-Control-Allow-Origin is set to '*', allowing any origin.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict CORS to specific trusted origins.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-942</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>CORS Misconfiguration: Wildcard Origin</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Access-Control-Allow-Origin is set to '*', allowing any origin.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict CORS to specific trusted origins.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-942</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>CORS Misconfiguration: Wildcard Origin</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Access-Control-Allow-Origin is set to '*', allowing any origin.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict CORS to specific trusted origins.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-942</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>CORS Misconfiguration: Wildcard Origin</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Access-Control-Allow-Origin is set to '*', allowing any origin.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict CORS to specific trusted origins.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-942</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>CORS Misconfiguration: Wildcard Origin</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Access-Control-Allow-Origin is set to '*', allowing any origin.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Restrict CORS to specific trusted origins.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-942</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card High">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Missing Security Headers: nosniff, DENY/SAMEORIGIN, HSTS</h3>
+<span class="badge High">High (7.0)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API8: Security Misconfiguration</p>
+<p>Response is missing security headers: nosniff, DENY/SAMEORIGIN, HSTS</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Add standard security headers to all API responses.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-693</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Excessive Data Exposure: jwt_token, password_field</h3>
+<span class="badge Medium">Medium (6.8)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API3: Broken Object Property Level Authorization</p>
+<p>Response contains potentially sensitive data patterns: jwt_token, password_field</p>
+<h4 style="margin-top:1rem;color:#64748b">Proof of Concept — Request</h4><pre>GET https://account.windy.com/api/info
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+  Accept: application/json, text/html, */*
+  Accept-Language: en-US,en;q=0.9</pre>
+<h4 style="color:#64748b">Response</h4><pre>HTTP 200 (419ms)
+  Content-Length: 227
+  Body: {"message":"ok","auth":false,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWdpYyI6MzA1LCJpYXQiOjE3NzgwOTg5OTAsImV4cCI6MTc3ODI3MTc5MH0.Od98E2FzCgaA5NuSejog0CdEjqhxjDr59mxnlhqNCWY","userInfo":{"requiresCookieConsent":false}}</pre>
+<div class="remediation">💡 <strong>Remediation:</strong> Filter response data on the server side. Only return properties the user is authorized to see.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-213</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://node.windy.com/services/umisteni${a} is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://node.windy.com/metadata/v1.0/forecast/ecmwf-hres/minifest.json${a} is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://node.windy.com/metadata/v1.0/forecast/ecmwf-hres/minifest.json${a}&premium=true is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://www.windy.com/img/favicon.ico is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://node.windy.com/sedlina/errors is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://account.windy.com/api/logout is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://account.windy.com/api/info is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://admin.windy.com/webcams/admin/v1.0/views?${Vt(n)} is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://sat.windy.com/satellite/composite.json?${Xp()} is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://sat.windy.com/satellite/archive/range.json?${Xp()} is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://rdr.windy.com/radar2/composite/minifest2.json?${Xp()} is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://rdr.windy.com/radar2/archive/composite/minifest2.json?${Xp()} is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://rdr.windy.com/radar2/composite/coverage.json is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://tiles.windy.com/v1/maptiles/outdoor/${t? is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>Shadow API: Undocumented Endpoint</h3>
+<span class="badge Medium">Medium (6.5)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API9: Improper Inventory Management</p>
+<p>Endpoint https://tiles.windy.com/v1/maptiles/winter/256/{z}/{x}/{y}/?lang=en is not documented in any API specification.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Document all API endpoints. Remove deprecated/unused APIs.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-1059</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+<div class="vuln-card Medium">
+<div style="display:flex;justify-content:space-between;align-items:start">
+<h3>No Rate Limiting: 20/20 requests succeeded</h3>
+<span class="badge Medium">Medium (6.1)</span>
+</div>
+<p style="color:#94a3b8;font-size:.85rem;margin:.5rem 0">API4: Unrestricted Resource Consumption</p>
+<p>Sent 20 rapid requests; 20 returned success. No rate limiting detected.</p>
+
+
+<div class="remediation">💡 <strong>Remediation:</strong> Implement rate limiting per client/IP. Use throttling mechanisms.</div>
+<p style="margin-top:.5rem;font-size:.8rem;color:#64748b">CWE: CWE-770</p>
+</div>
+
+
+
+
+<div class="footer">
+<p>Generated by Shadow API Scanner v1.0.0 &nbsp;|&nbsp; 2026-05-06T20:24:18.088644</p>
+</div>
+</div>
+</body>
+</html>
