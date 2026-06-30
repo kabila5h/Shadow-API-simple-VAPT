@@ -146,3 +146,4 @@ shadow-api-scanner/
 ## ⚠️ Legal Disclaimer
 
 This tool is for **authorized security testing only**. Always obtain proper authorization before scanning any target. Unauthorized testing may violate laws. Use responsibly.
+KR
